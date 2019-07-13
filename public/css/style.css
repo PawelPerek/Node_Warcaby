@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#root {
+  z-index: 1;
+}
+
+#all {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+}
+
+#form {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 255, 0, 0.6);
+  border-radius: 20px;
+  border: 2px solid green;
+  z-index: 3;
+}
+
+#form * {
+  width: 50%;
+}
+
+#form h1 {
+  text-align: center;
+}
+
+#form button {
+  height: 20%;
+  border: 2px solid green;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  transition: .2s;
+  font-size: 2em;
+}
+
+#form button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#annoyer {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#debug {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  height: 200px;
+  background: green;
+}
+
+#timer {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 200px;
+  height: 50px;
+  border: 4px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 10;
+}
