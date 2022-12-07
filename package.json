@@ -14,7 +14,7 @@
   "author": "Paweł Perek",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.2",
+    "body-parser": "^1.20.1",
     "fs": "0.0.1-security",
     "nodemon": "^1.17.2",
     "querystring": "^0.2.0"
